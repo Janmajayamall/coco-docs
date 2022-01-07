@@ -2,29 +2,57 @@
 title: Groups
 ---
 
-## Create a new Group
+import { Image } from "./../common.js";
+
+### Create a new Group
 
 To create a new group, select "Create new group" from top right drowpdown menu.
-![](https://i.imgur.com/woJ1yIm.jpg)
+
+<Image
+	src={require("./../../static/img/user-guides/create-new-group.jpg").default}
+	caption={"Select Create new group from dropdown"}
+/>
 
 Fill up necessary details for your new group, then "Submit". Every group has a on-chain contract that hosts prediction market of posts posted on its feed & its configurations. Therefore, you will be asked to confirm the transaction to deploy your new group's contract. Confirm and wait for the transaction to process.
-![](https://i.imgur.com/g6xt4PU.jpg)
+
+<Image
+	src={
+		require("./../../static/img/user-guides/create-new-group-tx.jpg")
+			.default
+	}
+	caption={
+		"Fill up group details & confirm transaction to create your new group"
+	}
+/>
 
 Once transaction is accepted, your new group is created and you will be redirected to the group settings page. On settings page, you can group's configurations.
 Since you have just created the group, you should update group's description, so that users can know what your new group is about.
-![](https://i.imgur.com/GXWWiHK.jpg)
+
+<Image
+	src={require("./../../static/img/user-guides/group-settings.jpg").default}
+	caption={
+		"Group settings page. Make sure to update your new group's description."
+	}
+/>
 
 Since you created the group, you are the only one governing the group's feed. If you want add more people to group's governing body, at present there exists no way to do this within the app. You will have to create & coordinate the governing body externally (i.e. discord, telegram, etc.) and then reflect the decision on the app using your account.
 
-## Governing groups
+### Governing groups
 
 To find groups you created & govern, select "Your groups" from menu dropdown on top right. You will find your groups list on right side panel.
-![](https://i.imgur.com/HiNcIGW.jpg)
+
+<Image
+	src={
+		require("./../../static/img/user-guides/your-groups-dropdown.jpg")
+			.default
+	}
+	caption={"Select Your groups from dropdown"}
+/>
 
 At the center, under "Posts To Review" you will find posts from your feed, for which you have to declare outcome before resolution period expires.
 **ATTACH IMAGE**
 
-## Declaring outcome of Post's prediction market
+### Declaring outcome of Post's prediction market
 
 You can find posts for which to declare outcome under "Posts To Review", after selecting "Your groups" from menu. Select the one of which you want to declare the outcome.
 

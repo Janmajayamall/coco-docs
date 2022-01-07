@@ -2,10 +2,16 @@
 title: Posts
 ---
 
+import { Image } from "./../common.js";
+
 #### Creata a new Post
 
 To post on a group's feed, click "New Post" on the left side panel of home page.
-![](https://i.imgur.com/0mtDlDZ.jpg)
+
+<Image
+	src={require("./../../static/img/user-guides/new-post-button.jpg").default}
+	caption={`Click on "New Post"`}
+/>
 
 Upload your post image by clicking on "Choose Image" & select the group to post to from "Select Group" dropdown. You will notice that you also have to provide values for "Liquidity" & "Bet for YES".
 
@@ -13,12 +19,22 @@ Upload your post image by clicking on "Choose Image" & select the group to post 
 -   Bet for YES - Amount in WETH for which your placing YES bet that your post is suitable for the group feed. Higher YES bet amount represents your high confidence in your new post.
 
 After providing necessary values, click on "Post" to post. Since new post requires creating the post's prediction market on-chain, you will be asked to confirm transaction for creating the market. Once the transaction is processed, you have posted your post to group feed successfully.
-![](https://i.imgur.com/KdXnm43.jpg)
+
+<Image
+	src={
+		require("./../../static/img/user-guides/new-post-create-tx.jpg").default
+	}
+	caption={`Fill up details, click on "Post", and approve the transaction to Post`}
+/>
 
 #### Placing bets on post (Trading period)
 
 You can select any post on your feed to place your bets. The **Live** text on post top right indicates that the post prediction market is in **Trading period**, thus open to bets.
-![](https://i.imgur.com/N4j7VS2.jpg)
+
+<Image
+	src={require("./../../static/img/user-guides/post-live-text.jpg").default}
+	caption={`"Live" green text means post is in Trading Period. You can place your bets.`}
+/>
 
 Once you select a post that is Live (i.e. open to bets), you will find dashboard to place your bets on your right.
 
@@ -34,10 +50,21 @@ Once you enter WETH amont, you will notice few values change.
 You will also notice that by default slippage is set to 0.5%. Setting slippage is required to prevent your order from executing at a unfavourable price caused by other orders.
 
 Once you have selected your choice, entered WETH amount, and verified other values, click "Buy" to buy shares & confirm your order transaction.
-![](https://i.imgur.com/zFb1YO4.jpg)
+
+<Image
+	src={require("./../../static/img/user-guides/post-buy-yes-tx.jpg").default}
+	caption={`After providing values, click "Buy" and approve transaction to place your bet.`}
+/>
 
 Once your transaction is processed, you should see your recently bought shares next to "You own" under the outcome of which shares you bought.
-![](https://i.imgur.com/X4fx36q.jpg =x300)
+
+<Image
+	src={
+		require("./../../static/img/user-guides/post-you-own-shares.jpg")
+			.default
+	}
+	caption={`Value next to "You own" represent shares you own of the outcome.`}
+/>
 
 If you don't see your shares, then wait for few seconds and reload page until it appears.
 
@@ -54,7 +81,14 @@ Select the post to challenge. On the right side, you will notice the challenge d
 -   Outcome favored - The outcome that you think is the right outcome and in favor of which you challenge the temporary outcome.
 
 To challenge enter the amount greater than equal to Min. amount to challenge and click Challenge button. Approve the transaction and wait for it process.
-![](https://i.imgur.com/kv8PmUT.jpg)
+
+<Image
+	src={
+		require("./../../static/img/user-guides/post-challenge-outcome-tx.jpg")
+			.default
+	}
+	caption={`Enter min. challenge amount & click on Challenge to challenge temporary outcome.`}
+/>
 
 Once your transaction is processed, your challenge is successful. You must see your favored outcome as the new temporary outcome & challenge period renewed.
 
@@ -77,20 +111,45 @@ Select the post from which you want to redeem your wins. On the right side you w
 -   You receive from Challenge - Amount you staked for the righr outcome + challenge winnings
 -   You get back in total - Amount in Your trade winnings + You receive from Challenge.
 
-![](https://i.imgur.com/oQeXlJg.jpg)
+<Image
+	src={
+		require("./../../static/img/user-guides/post-redeem-win-tx.jpg").default
+	}
+	caption={`Click on "Claim" to claim your entire winnings.`}
+/>
 
 To claim your winnings click on "Claim" button and approve the transaction. Once transaction has been processed, you have successfully claimed your wins.
 
 If your claim button is disabled. It's possible that you haven't given token approval of outcome shares to Router contract. Approval is needed to transfer tokens on your behalf and is only required once per group.
 
-![](https://i.imgur.com/2ZMRiQ7.jpg)
+<Image
+	src={
+		require("./../../static/img/user-guides/post-outcome-shares-approval.jpg")
+			.default
+	}
+	caption={`Give approval to router contract to spend shares you own.`}
+/>
 
 Click "Giver Approval" button below "Claim" button, to give necessary approvals.
 
 #### Your activity
 
 To track all posts that you have interacted with, select "Your activity" option from menu on top right.
-![](https://i.imgur.com/Oc8e65W.jpg)
 
-You can filter the posts by selecting filter from dropdown under "Filter posts".
-![](https://i.imgur.com/LI9uywg.jpg)
+<Image
+	src={
+		require("./../../static/img/user-guides/your-activity-dropdown.jpg")
+			.default
+	}
+	caption={`Select "Your activity" to see your past activity`}
+/>
+
+You can filter posts by selecting filter from dropdown under "Filter posts".
+
+<Image
+	src={
+		require("./../../static/img/user-guides/filter-your-activity.jpg")
+			.default
+	}
+	caption={`Select filter to find the post you are looking for.`}
+/>
