@@ -1,6 +1,5 @@
 ---
 title: Overview
-
 ---
 
 # Overview of how COCO works
@@ -16,6 +15,8 @@ To understand this, first let's look at how you place your bets. You place YES a
 One fascinating feature of prediction markets is that market prices for placing YES & NO bets provide accurate estimation of YES & NO outcomes probability. And this is where prediction markets of posts become helpful in curation of the feed.
 
 Since YES & NO bets on a post prediction market means predicting whether users & governing body will like the post or not, their respective prices can be considered good estimation of probability by which users & governing body will like the post. And this is how curation happens. The curated feed only contains posts that have high YES probability in their respective prediction market.
+
+&nbsp;
 
 **So zooming out, if you want to reason about why a group's feed stays curated with posts that you & others will like?**
 
