@@ -22,7 +22,7 @@ to create one for your new post. Once transaction is processed your post has bee
 
 `Creation Amount` is the amount you are willing to pay for posting in the group. <br/>
 1/2 of the amount is used for funding the prediction market of your post, so that
-others willing to place their predictions on your are post have sufficient incentive to do so. <br/>
+others willing to place their predictions on your post have sufficient incentive to do so. <br/>
 Second half 1/2 is used for placing your YES predicition on the your new post.
 
 :::
@@ -120,22 +120,42 @@ it will be declared as the final outcome <br/>
 
 #### Resolution Period
 
-If max. no. of challenges are reached for any post's prediction market, the market enters the Resolution period. That is, the market is waiting for governing body of the group to declare the final outcome.
+If max. no. of challenges are reached for any post's prediction market, it enters `Resolution period`.
+That is, the market is waiting for group's governing body to declare the final outcome.
 
-A post in resolution period will have "Resolution" text on its top right corner.
+Posts in resolution period will have `Resolution` text on their top right corner.
 
 #### Redeem Wins
 
-Once the final outcome is declared, either as the temporary outcome or governing body declared it, the market ends. Post's with their prediction market ended, will have "Ended" text on their top right. In "Ended" state you can redeem your wins.
+Post's prediction market ends after final outcome is declared and you can redeem your wins. This is also indicated by `Ended` text on top right corner.
 
-Select the post from which you want to redeem your wins. On the right side you will notice, the "final outcome", a "Claim" button, along with some values.
+:::info
 
--   Your trade winnings - Your initial investment + profit by buying shares of the right outcome (i.e. final outcome).
--   In favour of YES - Amount that you staked for challenge in favour of YES outcome
--   In favour of NO - Amount that you staked for challenge in favour of NO outcome
--   Challenge winnings - Your reward for staking for the right outcome
--   You receive from Challenge - Amount you staked for the righr outcome + challenge winnings
--   You get back in total - Amount in Your trade winnings + You receive from Challenge.
+`Final outcome` is either set by group's governing body if max. no. of challenges are reached or as temporary outcome
+if it wasn't challenged.
+
+:::
+
+Select the post from which you want to redeem your wins. One the right side of the page, under `Final outcome` you will find summary of your predictions,
+your wins from predictions, your challenges, wins from challanges, and total amount that you get back. Hit `Claim` & confirm transaction to claim your wins.
+
+:::info
+
+`Your trade winnings`: Equal to units of final outcome shares that you own. <br/>
+`In favour of YES`: Amount you staked to challenge in favour of YES outcome. <br/>
+`In favour of NO`: Amount you staked to challenge in favour of NO outcome. <br/>
+`Challenge winnings`: Reward you receive if you were last to stake on the right outcome. Reward is equal
+to total amount staked on the losing outcome. <br/>
+`You receive from Challenge`: Amount staked for the right outcome + Challenge winnings. <br/>
+`You get back in total`: Your trade winnings + You receive from Challenge
+
+:::
+
+:::info
+
+If `Final outcome` is declared by the group group's governing body, amount equal to group's fee will be deducted from `Challenge winnings`.
+
+:::
 
 <Image
 	src={
@@ -144,23 +164,28 @@ Select the post from which you want to redeem your wins. On the right side you w
 	caption={`Click on "Claim" to claim your entire winnings.`}
 />
 
-To claim your winnings click on "Claim" button and approve the transaction. Once transaction has been processed, you have successfully claimed your wins.
+:::note
 
-If your claim button is disabled. It's possible that you haven't given token approval of outcome shares to Router contract. Approval is needed to transfer tokens on your behalf and is only required once per group.
+It's possible that the `Claim` button is disabled because you haven't given app's router contract approval to spend your outcome shares on your
+behalf.
+
+To give approval click on `Giver Approval` & confirm transaction.
 
 <Image
 	src={
 		require("./../../static/img/user-guides/post-outcome-shares-approval.jpg")
 			.default
 	}
-	caption={`Give approval to router contract to spend shares you own.`}
+	caption={`Give approval.`}
 />
 
-Click "Giver Approval" button below "Claim" button, to give necessary approvals.
+Note that this is only needed once per group.
+
+:::
 
 #### Your activity
 
-To track all posts that you have interacted with, select "Your activity" option from menu on top right.
+To track all posts that you have interacted with, select `Your activity` option from menu on top right.
 
 <Image
 	src={
@@ -170,7 +195,7 @@ To track all posts that you have interacted with, select "Your activity" option 
 	caption={`Select "Your activity" to see your past activity`}
 />
 
-You can filter posts by selecting filter from dropdown under "Filter posts".
+You can filter posts by selecting filter from dropdown under `Filter posts`.
 
 <Image
 	src={
