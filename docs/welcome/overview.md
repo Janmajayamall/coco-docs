@@ -4,20 +4,14 @@ title: Overview
 
 # Overview of how COCO works
 
-Everyone (an individual or a group) is free to create groups on interesting topics. Scope of topics is unlimated. It can be about Funniest memes of the month, or Best articles on crypto, or UI designs, or Top bars in Switzerland, or anything you can imagine.
+Everyone (an individual or a group) is free to create groups on interesting topics & a group has a dedicated governing body. Scope of topics for groups is unlimited. It can be about Funniest memes of the month, or Best articles on crypto, or UI designs, or Top bars in Switzerland, or anything you can imagine.
 
-Like any other feed, anyone is free to post but with a twist. To post to a feed, users will have to place a bet that the post they are posting will be liked by others & the governing body. If some user does not like what you posted on the feed, they can place their bet against your post. You will either win or lose your bets depending on the final verdict given on the post after a specified amount of time.
+Like any other feed, anyone is free to post to the group's feed but with a twist. To post, users make a prediction of YES that their post will be liked by other users & the group's governing body. If some user does not like what you posted, they can make a prediction of NO that other users & the governing body will not like the post. Your prediction will either be right or wrong, depending on the final verdict on the post after a specified amount of time.
 
-## So how does betting on posts translate to curation of the feed?
+## So how do YES & NO predictions on posts translate to curation of the feed?
 
-To understand this, first let's look at how you place your bets. You place YES and NO bets on the prediction market of the post. Prediction markets on posts are simple binary event prediction markets, where you either predict YES the event in question will happen or NO the event in question will not happen. So in case of prediction market on a post, you predict whether other users & governing body will like the post. If you think they will, you buy YES outcome shares, otherwise you buy NO outcome shares.
+To understand this, first let's look at how you place your predictions. You place YES and NO predictions on the prediction market of the post. Post's prediction market is simply a binary event market, where a YES prediction means users & group's governing body will like the post and a NO prediction means otherwise.
 
-One fascinating feature of prediction markets is that market prices for placing YES & NO bets provide accurate estimation of YES & NO outcomes probability. And this is where prediction markets of posts become helpful in curation of the feed.
+One fascinating feature of prediction markets is that prices for placing YES & NO predictions are accurate estimations of probability of YES & NO outcomes. And this is where post prediction markets become helpful in curation of the feed.
 
-Since YES & NO bets on a post prediction market means predicting whether users & governing body will like the post or not, their respective prices can be considered good estimation of probability by which users & governing body will like the post. And this is how curation happens. The curated feed only contains posts that have high YES probability in their respective prediction market.
-
-&nbsp;
-
-**So zooming out, if you want to reason about why a group's feed stays curated with posts that you & others will like?**
-
-It's because you only see posts that have high probability for you to like. That means people have literally placed bets that you will like the post. And for the posts that you don't see, people have placed bets that you won't like them.
+Price of predicting YES or NO provides probability by which users & governing body will like the post. Thus, a group's curated feed simply contains a list of posts with high YES probability.

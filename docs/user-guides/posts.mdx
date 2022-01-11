@@ -6,14 +6,17 @@ import { Image } from "./../common.js";
 
 #### Creata a new Post
 
-To post on a group's feed, click "New Post" on the left side panel of home page.
+To post, click "New Post" on the left side panel of home page.
 
 <Image
 	src={require("./../../static/img/user-guides/new-post-button.jpg").default}
 	caption={`Click on "New Post"`}
 />
 
-Upload your post image by clicking on "Choose Image" & select the group to post to from "Select Group" dropdown. You will notice that you also have to provide values for "Liquidity" & "Bet for YES".
+Select group to post to, enter Creation Amount, upload post image and hit "Post". <br/>
+
+Since every post also has an on-chain prediction market, confirm the transaction to create one for your new post. Once transaction is processed your post has
+been created successfully.
 
 -   Liquidity - Amount in WETH for which you are supplying liquidity to your post's prediction market. It incentivises other users to place their bets on your post's predicition market.
 -   Bet for YES - Amount in WETH for which your placing YES bet that your post is suitable for the group feed. Higher YES bet amount represents your high confidence in your new post.
@@ -27,36 +30,37 @@ After providing necessary values, click on "Post" to post. Since new post requir
 	caption={`Fill up details, click on "Post", and approve the transaction to Post`}
 />
 
-#### Placing bets on post (Trading period)
+#### Placing predicition on posts (Trading period)
 
-You can select any post on your feed to place your bets. The **Live** text on post top right indicates that the post prediction market is in **Trading period**, thus open to bets.
+Select the post to place your predicton. The **Live** text on post's top right indicates that the post is in **Trading period** and accepts predictions.
 
 <Image
 	src={require("./../../static/img/user-guides/post-live-text.jpg").default}
-	caption={`"Live" green text means post is in Trading Period. You can place your bets.`}
+	caption={`"Live" green text indicates post is in Trading Period. Place your predictions.`}
 />
 
-Once you select a post that is Live (i.e. open to bets), you will find dashboard to place your bets on your right.
+After selecting post, use the dashboard on right side of the page to place predicitions.
 
-By default the dashboard is on "Buy". To place a YES bet, you buy YES shares and to place NO bet, you buy NO shares. Select either YES or NO and then enter amount in WETH for which you want buy shares.
+Since we want to place prediction, select BUY on the dashboard from BUY or SELL. To place either YES or NO predicition, buy YES or NO outcome shares respectively.
 
-Once you enter WETH amont, you will notice few values change.
+Once you enter the WETH amount using which you want to buy either YES or NO outcome shares, you will notice few values below input box change. These values are <br/>
 
--   Your choice - The type of share you are buying.
--   Estimated shares bought - Estimation of total shares that you will receive aftre buying.
--   Avg. price per share - Price in WETH that you pay for every share you receive.
--   Max. potential profit - Maximum profit in WETH that you will make, if your chosen outcome is declared as final outcome.
+1. Your choice: Outcome share you are buying in exchange of WETH amount.
+2. Estimated shares bought: Total shares you will by with WETH amount.
+3. Avg. price per share: Price in WETH that you pay for an outcome share.
+4. Max. potential profit: Your Max. profit in WETH (i.e. profit you make if your prediction is right).
 
-You will also notice that by default slippage is set to 0.5%. Setting slippage is required to prevent your order from executing at a unfavourable price caused by other orders.
+By default slippage is set to 0.5%. Slippage is required to prevent your order from executing at a unfavourable price caused by other orders,
+thus recommended slippage is >=0.5%.
 
-Once you have selected your choice, entered WETH amount, and verified other values, click "Buy" to buy shares & confirm your order transaction.
+Click "Buy" & confirm transaction to buy outcome shares & place your predicition.
 
 <Image
 	src={require("./../../static/img/user-guides/post-buy-yes-tx.jpg").default}
 	caption={`After providing values, click "Buy" and approve transaction to place your bet.`}
 />
 
-Once your transaction is processed, you should see your recently bought shares next to "You own" under the outcome of which shares you bought.
+Once transaction is processed, you should see your recently bought shares next to "You own" under the outcome of which shares you bought.
 
 <Image
 	src={
@@ -70,17 +74,21 @@ If you don't see your shares, then wait for few seconds and reload page until it
 
 #### Challenge temporary outcomes (Challenge period)
 
-If any post has "Challenge" in red on their top right, that post is in Challenge round & their Trading period has expired.
+Posts with red "Challenge" text on top right, are in Challenge period & their Trading period has expired.
 
-Select the post to challenge. On the right side, you will notice the challenge dashboard under "Challenge outcome". It displays the following values:
+Select a post in Challenge period. On the right side of the page, you will find challenge dashboard. It displays a few important values -
 
--   Temporary outcome - The current temporary outcome. If the outcome isn't challenged successfully before challenge period expires, it is declared the final outcome.
--   Time left to challenge - Time left for current challenge period to expire.
--   Challenges left - No. of challenges left before max. challenge limit is reached.
--   Min. amount to challenge - Amount in WETH to stake to challenge temporary outcome.
--   Outcome favored - The outcome that you think is the right outcome and in favor of which you challenge the temporary outcome.
+1. Temporary outcome: The current temporary outcome. If the outcome isn't challenged successfully before challenge period expires, it is declared the final outcome.
+2. Time left to challenge - Time left for current challenge period to expire.
+3. Challenges left - No. of challenges left before max. challenge limit is reached.
+4. Min. amount to challenge - Amount in WETH to stake to challenge temporary outcome.
+5. Outcome favored - The outcome that you think is the right outcome and in favor of which you challenge the temporary outcome.
 
-To challenge enter the amount greater than equal to Min. amount to challenge and click Challenge button. Approve the transaction and wait for it process.
+Enter any amount in WETH that is greater than or equal to Min. amount to challenge and hit Challenge & confirm transaction.
+Once transaction is processed, reload the page and check that your challenge was successful, your favored outcome is new
+temporary outcome, and challenge period is renewed.
+
+---
 
 <Image
 	src={
@@ -89,8 +97,6 @@ To challenge enter the amount greater than equal to Min. amount to challenge and
 	}
 	caption={`Enter min. challenge amount & click on Challenge to challenge temporary outcome.`}
 />
-
-Once your transaction is processed, your challenge is successful. You must see your favored outcome as the new temporary outcome & challenge period renewed.
 
 #### Resolution Period
 
