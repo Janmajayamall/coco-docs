@@ -10,27 +10,34 @@ Group's governing body can be of any size and should be expected to have suffici
 knowledge about the topic of the group. For example, a group for **Best articles on crypto**
 should have governing body consisting of people with in-depth knowledge about crypto.
 
-Group's governing body sets parameters of the group that affect curation of post's posted to
-the group.
+Group's governing body sets parameters of the group that affect curation of post's
+posted to the group.
 
-1.  `Trading Period` - Duration for which users can place predictions after post the created.
-    It is represented in hours and can range from hours, to days, to even weeks, depeding on the group.
-    For example, a group for **Top MEMEs of the week** might have a trading period of 1 - 2 days.
-    Or a group for **Most informative article on crypto** might have trading period of a week.
-2.  `Challenge Period` - Time during which temporary outcome can be challenged. `Challenge period` starts right
-    after `Trading Period` expires with the favored outcome set as `temporary outcome`. `Challenge period` renews
-    after every successful challange and can range from hours to days. While setting a value for Challenge period, it's
-    helpful to reason about how long would it take for users to spot that the temporary outcome isn't correct and challange it.
-3.  `Max. no. of Challenges` - Puts a hard cap on how many times temporary outcomes can be challenged. Once the limit is reached,
-    group's governing body is responsible for declaring the outcome for the post. The Hard cap is needed for 2 reasons. (a) So that
-    challenges don't go on forever. (b) Enforce that group's governing body has final take on whether post is suitable for group's
+1.  `Trading Period` - Duration for which users can place predictions after post
+    the created. It is represented in hours and can range from hours, to days, to
+    even weeks, depeding on the group. For example, a group for **Top MEMEs of the week**
+    might have a trading period of 1 - 2 days. Or a group for **Most informative article on crypto**
+    might have trading period of a week.
+2.  `Challenge Period` - Time during which temporary outcome can be challenged. `Challenge period`
+    starts right after `Trading Period` expires with the favored outcome set as `temporary outcome`.
+    `Challenge period` renews after every successful challange and can range from hours to days.
+    While setting a value for Challenge period, it's helpful to reason about how long would it
+    take for users to spot that the temporary outcome isn't correct and challange it.
+3.  `Max. no. of Challenges` - Puts a hard cap on how many times temporary outcomes can be challenged.
+    Once the limit is reached, group's governing body is responsible for declaring the outcome for
+    the post. The Hard cap is needed for 2 reasons. (a) So that challenges don't go on forever.
+    (b) Enforce that group's governing body has final take on whether post is suitable for group's
     feed or not.
-4.  `Resolution Period` - Time needed for the group's governing body to declare the final outcome of a post that has reached `max. no. of Challenges`.
-    It exists so that the governing body does not takes forever to declare outcomes.
-    If governing body fails to declare outcome before resolution period expires, the final outcome is set as the last temporary
-    outcome. This obviously isn't desired. But if it happens it will send a bad signal about the governing body not performing
-    its job.
-5.  `Resolution Fee` - Fee levied by group's governing body for declaring the final outcome. The fee can range from 0-100% and is
-    charged from the amount staked on the losing outcome during Challanges. For example, assume that resolution fee for a group is set as 0.1%
-    and max. number of challenges for a post were reached, ending with 1 WETH staked on NO and 2 WETH staked on YES. If group's governing body
-    declares YES as the final outcome, it will charge 0.1 WETH (0.1% of 1 WETH, the amount staked on losing outcome) as the resolutoin fee.
+4.  `Resolution Period` - Time needed for the group's governing body to declare the final outcome
+    of a post that has reached `max. no. of Challenges`. It exists so that the governing body does
+    not takes forever to declare outcomes. If governing body fails to declare outcome before
+    resolution period expires, the final outcome is set as the last temporary outcome. This
+    obviously isn't desired. But if it happens it will send a bad signal about the governing
+    body not performing its job.
+5.  `Resolution Fee` - Fee levied by group's governing body for declaring the final outcome
+    The fee can range from 0-100% and is charged from the amount staked on the
+    losing outcome during Challanges. For example, assume that resolution fee
+    for a group is set as 0.1% and max. number of challenges for a post were reached,
+    ending with 1 WETH staked on NO and 2 WETH staked on YES. If group's governing body
+    declares YES as the final outcome, it will charge 0.1 WETH (0.1% of 1 WETH, the amount
+    staked on losing outcome) as the resolutoin fee.
