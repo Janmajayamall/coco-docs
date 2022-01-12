@@ -13,20 +13,31 @@ To create a new group, select "Create New Group" from drowpdown menu at top righ
 	caption={"Select Create New Group from dropdown"}
 />
 
-
-Every group has an on-chain contract that hosts the predictions on the posts on the group feed. The cotract will be deployed with the parameters you set now, but you can change them later. 
+Every group has an on-chain contract that hosts the predictions on the posts on the
+group feed. The cotract will be deployed with the parameters you set now, but you
+can change them later.
 
 :::info
 
-`Prediction Period`: Length of time where users are able to make YES or NO predictions after the post is created. </br>
-`Challenge Period`: Length of time after the prediction period ends when users can challenge an outcome before it becomes final. </br>
-`Max. no. of Challenges`: Hard cap on how many times a temporary outcome can be challenged. Once the limit is reached, the group's governing body is responsible for declaring the outcome. </br>
-`Resolution Period`: Time limit for the group's governing body to declare the final outcome of a post that has reached the maximum number of challenges. If governing body fails to declare an outcome before resolution period expires, the final outcome is set as the last temporary outcome. </br>
-`Resolution Fee`: Fee taken by group's governing body for declaring the final outcome, as a percent taken from the amount staked on the losing challenge outcome. </br>
+`Prediction Period`: Length of time where users are able to make YES or NO
+predictions after the post is created. </br>
+`Challenge Period`: Length of time after the prediction period ends when
+users can challenge an outcome before it becomes final. </br>
+`Max. no. of Challenges`: Hard cap on how many times a temporary outcome
+can be challenged. Once the limit is reached, the group's governing body
+is responsible for declaring the outcome. </br>
+`Resolution Period`: Time limit for the group's governing body to declare
+the final outcome of a post that has reached the maximum number of challenges.
+If governing body fails to declare an outcome before resolution period expires,
+the final outcome is set as the last temporary outcome. </br>
+`Resolution Fee`: Fee taken by group's governing body for declaring the
+final outcome, as a percent taken from the amount staked on the losing
+challenge outcome. </br>
 
 :::
 
-You'll need to submit a transaction in MetaMask to create the on-chain contract for your new group.
+You'll need to submit a transaction in MetaMask to create the on-chain contract
+for your new group.
 
 <Image
 	src={
@@ -38,9 +49,10 @@ You'll need to submit a transaction in MetaMask to create the on-chain contract 
 	}
 />
 
-Once the transaction is processed, your new group is created and you will be redirected to the group
-settings page. On the Settings page, you can check and update the group's configurations. <br/> Since you have
-just created the group, you should update group's description to let other users know what the
+Once the transaction is processed, your new group is created and you will be
+redirected to the group settings page. On the Settings page, you can check and
+update the group's configurations. <br/> Since you have just created the group,
+you should update group's description to let other users know what the
 group is about.
 
 <Image
@@ -50,14 +62,16 @@ group is about.
 	}
 />
 
-
-
 ### Governing groups
 
-For now, if you create a group, you act as the group's governing body. If you want to cooperate with other people on governing a group, you'll currently need to coordinate externally. 
-That will change with future releases - we're working on ways to add more than one person to the group's governing body within the app so that governance can be done in a more decentralized way.
+For now, if you create a group, you act as the group's governing body. If you
+want to cooperate with other people on governing a group, you'll currently
+need to coordinate externally. That will change with future releases - we're
+working on ways to add more than one person to the group's governing body within
+the app so that governance can be done in a more decentralized way.
 
-To find groups you created and govern, select "Your Groups" from the dropdown menu at the top right of the page. 
+To find groups you created and govern, select "Your Groups" from the dropdown
+menu at the top right of the page.
 
 <Image
 	src={
@@ -66,7 +80,6 @@ To find groups you created and govern, select "Your Groups" from the dropdown me
 	}
 	caption={"Select Your Groups from dropdown"}
 />
-
 
 ### Resolving Prediction Outcomes
 
@@ -78,11 +91,12 @@ groups which have reached the maximum number of challenges and require resolutio
 		require("./../../static/img/user-guides/posts-to-review-list.jpg")
 			.default
 	}
-	caption={"List of posts to declare outcome for"}
+	caption={""}
 />
 <!-- I think this caption is more visually confusing than anything (especially because the image doesn't actually show a list, just a single post) -->
 
-Select the post you want to resolve. On the right side, select the outcome you think is correct and click `Declare Outcome`. Confirm the transaction and wait for it to
+Select the post you want to resolve. On the right side, select the outcome you
+think is correct and click `Declare Outcome`. Confirm the transaction and wait for it to
 process. Once processed, reload the page to check that status is updated to `Ended`.
 
 <Image
