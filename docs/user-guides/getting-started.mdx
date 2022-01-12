@@ -6,13 +6,13 @@ import { Image } from "./../common.js";
 
 ### Sign up
 
-If you are not already signed in, click on "Sign In" button on top right corner.
+<!-- I think this section can assume people have not signed in before -->
 
-To proceed you will need Metamask installed. If you don't, install it by clicking
-on "Get Metamask".
+You will need MetaMask installed. If you don't already have MetaMask, click
+on "Get Metamask" and follow the instructions to install.
 
-Since COCO is live on Rinkeby-Arbitrum, you will have to switch metmask to
-Rinkeby-Arbitrum network to proceed further. If you haven't already, click on "Switch
+Since COCO is live on the Rinkeby-Arbitrum test network, you will have to switch MetaMask to
+Rinkeby-Arbitrum to proceed further. If you haven't already, click on "Switch
 to Rinkeby Arbitrum".
 
 <Image
@@ -23,7 +23,9 @@ to Rinkeby Arbitrum".
 	caption={"Metamask Switch to Rinkeby-Arbitrum"}
 />
 
-Now connect your Metamask wallet to COCO.
+<!-- should we add a note about how to add Arbitrum to MetaMask? -->
+
+Now connect your MetaMask wallet to COCO.
 
 <Image
 	src={
@@ -33,8 +35,8 @@ Now connect your Metamask wallet to COCO.
 	caption={"Metamask connect to COCO"}
 />
 
-Once your wallet is connected, you will be asked to "Sign login message" and a
-signature request will pop up on metamask. The message asks you to sign your hot
+Once your wallet is connected, you will be asked to "Sign login message", and a
+signature request will pop up on MetaMask. The message asks you to sign your hot
 wallet address & login nonce, to be used for frequent interactions with COCO.
 Once you sign, you will be logged in.
 
@@ -46,23 +48,25 @@ Once you sign, you will be logged in.
 	caption={"Metamask Sign login message"}
 />
 
+
+<!-- I think we should create a separate "Your Home Page" section for the content below -->
+
+### Explore and Home Feeds
+
+Your home page by default consists of two feeds: <br/>
+(a) **Explore Feed** consists of the most active posts across all group feeds
+during the past week. <br/>
+(b) **Home Feed** consists of all posts from the groups that you have
+joined, sorted by latest.
+
 ### Join groups
 
 You can find groups to join on the right side of the home page, under the
 heading **Explore Groups**.
 
-### Explore & Home Feed
+### Group feeds
 
-Your home page by default consists of two feeds. <br/>
-(a) **Explore feed** consists of the most active posts across all group feeds
-during the past week. <br/>
-(b) **Home feed** consists of all posts posted across the groups that you have
-joined, sorted by latest.
-
-### Group feed
-
-To visit a group's feed, select the group's name under **Explore groups** section
-to the right on home page.
+To visit a group's feed, select the group's name under **Explore groups** on the right side of the home page.
 
 <Image
 	src={require("./../../static/img/getting-started/select-group.jpg").default}
@@ -71,7 +75,7 @@ to the right on home page.
 
 ### Display threshold
 
-The slider under "Display" on the left, controls YES % threshold of your feed.
+The slider under "Display" on the left, controls the YES % threshold of your feed.
 
 <Image
 	src={
@@ -83,5 +87,4 @@ The slider under "Display" on the left, controls YES % threshold of your feed.
 	}
 />
 
-By setting YES % threshold at specific value, only posts with YES probability
-greater than the set value will appear on the feed.
+Only posts with a percentage of YES predictions greater than the value you set here will appear on your feed. This lets you filter out posts that the group has predicted won't be included, even before the prediction period for those posts ends.
