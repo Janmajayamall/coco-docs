@@ -1,0 +1,64 @@
+---
+title: Place Predictions
+---
+
+import { Image } from "./../../common.js";
+
+Select the post to place your predicton. The `Live` text on post's top right indicates
+that the post is in `Trading period` and accepts predictions.
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-live-text.jpg").default
+	}
+	caption={`"Live" green text indicates post is in Trading Period. So, place your predictions.`}
+/>
+
+After selecting post, use the dashboard on right side of the page to place predicitions.
+
+Since we want to place a prediction, select BUY, among BUY or SELL option, on the dashboard.
+To place YES prediction, buy YES outcome shares. To place NO prediction,
+buy NO outcome share.
+
+Enter WETH amount for which you want to buy either YES or NO outcome shares, select
+slippage, check Estimated shares bought, Avg. Price, Max. profit, and then hit `BUY`.
+Confirm the transaction & wait for it to process. Once processed, you have successfully
+placed your prediction.
+
+:::info
+`Your choice`: Your selected predicition outconme. <br/>
+`Estimated shares bought`: Total shares you are buying with WETH amount. <br/>
+`Avg. price per share`: Price per outcome share in WETH. <br/>
+`Max. potential profit`: Max. profit you can make, if your prediction is correct. <br/>
+:::
+
+:::caution
+
+`Slippage` is required to prevent your order from executing at a unfavourable price
+caused by other orders. We recommend that you set your slippage at value >= 0.5%.
+
+:::
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-buy-yes-tx.jpg").default
+	}
+	caption={`After providing values, click "Buy" and approve transaction to place your bet.`}
+/>
+
+You should see your recently bought shares next to `You own` under the outcome
+of which shares you bought.
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-you-own-shares.jpg")
+			.default
+	}
+	caption={`Value next to "You own" represent shares you own of the outcome.`}
+/>
+
+If you don't see your shares, then wait for few seconds and reload page until it appears.
+
+:::info
+To redeem your wins check [`Redeem Wins`](redeem) section
+:::

@@ -1,0 +1,36 @@
+---
+title: Create New Post
+---
+
+import { Image } from "./../../common.js";
+
+To post, click `New Post` on the left side panel of home page.
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/new-post-button.jpg").default
+	}
+	caption={`Click on "New Post"`}
+/>
+
+Select group to post to, enter Creation Amount, upload post image and hit `Post`. <br/>
+
+Since every post also has an on-chain prediction market, confirm the transaction
+to create one for your new post. Once transaction is processed your post has been created successfully.
+
+:::info
+
+`Creation Amount` is the amount you are willing to pay for posting in the group. <br/>
+1/2 of the amount is used for funding the prediction market of your post, so that
+others willing to place their predictions on your post have sufficient incentive to do so. <br/>
+Second half 1/2 is used for placing your YES predicition on the your new post.
+
+:::
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/new-post-create-tx.jpg")
+			.default
+	}
+	caption={`Fill up details, click on "Post", and approve the transaction to Post`}
+/>

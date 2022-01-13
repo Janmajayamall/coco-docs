@@ -11,7 +11,17 @@ module.exports = {
 			items: [
 				"user-guides/getting-started",
 				"user-guides/groups",
-				"user-guides/posts",
+				{
+					type: "category",
+					label: "Posts",
+					items: [
+						"user-guides/posts/new-post",
+						"user-guides/posts/predictions",
+						"user-guides/posts/challenges",
+						"user-guides/posts/resolution",
+						"user-guides/posts/redeem",
+					],
+				},
 			],
 		},
 		{
@@ -19,8 +29,8 @@ module.exports = {
 			label: "More about COCO",
 			items: [
 				"more-about-coco/post-lifecycle",
-				"more-about-coco/group-governing-body",
 				"more-about-coco/groups-predictions-curation",
+				"more-about-coco/group-governing-body",
 			],
 		},
 	],

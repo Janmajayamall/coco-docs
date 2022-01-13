@@ -1,0 +1,66 @@
+---
+title: Redeem Wins
+---
+
+import { Image } from "./../../common.js";
+
+Post's prediction market ends after final outcome is declared and you can redeem your wins.
+This is also indicated by `Ended` text on top right corner.
+
+:::info
+
+`Final outcome` is either set by group's governing body if max. no. of challenges are reached
+or as temporary outcome if it wasn't challenged.
+
+:::
+
+Select the post from which you want to redeem your wins. One the right side of the page,
+under `Final outcome` you will find summary of your predictions, your wins from predictions,
+your challenges, wins from challanges, and total amount that you get back.
+Hit `Claim` & confirm transaction to claim your wins.
+
+:::info
+
+`Your trade winnings`: Equal to units of final outcome shares that you own. <br/>
+`In favour of YES`: Amount you staked to challenge in favour of YES outcome. <br/>
+`In favour of NO`: Amount you staked to challenge in favour of NO outcome. <br/>
+`Challenge winnings`: Reward you receive if you were last to stake on the right
+outcome. Reward is equal to total amount staked on the losing outcome. <br/>
+`You receive from Challenge`: Amount staked for the right outcome + Challenge winnings. <br/>
+`You get back in total`: Your trade winnings + You receive from Challenge
+
+:::
+
+:::info
+
+If `Final outcome` is declared by the group group's governing body, amount equal to
+group's fee will be deducted from `Challenge winnings`.
+
+:::
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-redeem-win-tx.jpg")
+			.default
+	}
+	caption={`Click on "Claim" to claim your entire winnings.`}
+/>
+
+:::note
+
+It's possible that the `Claim` button is disabled because you haven't given app's
+router contract approval to spend your outcome shares on your behalf.
+
+To give approval click on `Giver Approval` & confirm transaction.
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-outcome-shares-approval.jpg")
+			.default
+	}
+	caption={`Give approval.`}
+/>
+
+Note that this is only needed once per group.
+
+:::
