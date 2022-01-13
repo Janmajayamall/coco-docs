@@ -14,4 +14,4 @@ COCO's curation mechanism works similarly to a _prediction market_. In a predict
 
 In COCO's curation mechanism, the "event" is whether a governing body accepts or rejects a post from their group's feed - but if predictions work as intended then the event doesn't actually need to occur. In other words, if all goes well predictions behave like votes, with users putting their money at stake to back their votes. The favored outcome is assumed to be correct after the prediction period ends, unless it is challenged. Only if the favored outcome is challenged repeatedly does the governing body step in to declare an outcome. You can think of the challenge and resolution mechanisms as safeguards against people making dishonest predictions, whether to cheat the system or just to troll.
 
-For more on how predictions work, including pricing and probability, see [Groups, Predictions and Curation](https://coco-docs.vercel.app/more-about-coco/groups-predictions-curation).
+For more on how predictions work, including pricing and probability, see [Groups, Predictions and Curation](/more-about-coco/groups-predictions-curation).
