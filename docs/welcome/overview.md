@@ -6,7 +6,9 @@ title: Overview
 
 Anyone is free to create a group on a topic that interests them. The scope of group topics is unlimited - funniest memes, best UI designs, top bars in Switzerland or anything else you can imagine.
 
-Group feeds are primarily curated by users _predicting_ what others in the group will want to see. Users spend WETH to place predictions on whether a post will ultimately be liked by other users and the group's governing body. If their prediction is right, they win some WETH; otherwise they lose their initial amount. The _favored_ outcome is the outcome predicted by the majority at the end of the prediction period - but anyone can challenge it. If several challenges don't resolve to a clear outcome, then the group's governing body declares the outcome.
+Group feeds are primarily curated by users _predicting_ what others in the group will want to see. Users spend WETH to place predictions on whether a post will ultimately be liked by other users and the group's governing body. If their prediction is right, they win some WETH; otherwise they lose their initial amount. The _favored_ outcome is set as the outcome predicted by the majority at the end of the prediction period - but anyone can challenge it. If several challenges don't resolve to a clear outcome, then the group's governing body declares the outcome.
+
+To learn more about a Post's prediction life-cycle [Click here](/more-about-coco/post-lifecycle)
 
 ## So how do YES or NO predictions on posts translate to curation of the feed?
 
