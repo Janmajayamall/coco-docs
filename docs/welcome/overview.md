@@ -1,17 +1,16 @@
 ---
 title: Overview
 ---
+# How COCO Works
 
-# Overview of how COCO works
+Anyone is free to create a group on a topic that interests them. The scope of group topics is unlimited - funniest memes, best UI designs, top bars in Switzerland or anything else you can imagine. 
 
-Everyone (an individual or a group) is free to create groups on interesting topics & a group has a dedicated governing body. Scope of topics for groups is unlimited. It can be about Funniest memes of the month, or Best articles on crypto, or UI designs, or Top bars in Switzerland, or anything you can imagine.
+Group feeds are primarily curated by users *predicting* what others in the group will want to see. Users have to deposit ETH in order to make a prediction about whether a post will ultimately be included, and are rewarded or penalized depending on whether they correctly predict the outcome. Anyone can challenge an outcome they think is wrong, and if challenges don't resolve on their own then a group's governing body can declare an outcome. 
 
-Like any other feed, anyone is free to post to the group's feed but with a twist. To post, users make a prediction of YES that their post will be liked by other users & the group's governing body. If some user does not like what you posted, they can make a prediction of NO that other users & the governing body will not like the post. Your prediction will either be right or wrong, depending on the final outcome declared.
+## So how do YES or NO predictions on posts translate to curation of the feed?
 
-## So how do YES & NO predictions on posts translate to curation of the feed?
+COCO's curation mechanism works similarly to a *prediction market*. In a prediction market, traders buy and sell shares on possible outcomes of some external event - from the winner a football tournament, to the outcome of a presidential election, to whether it will rain next Tuesday. The price of shares is relative to the probability of a specific outcome: the higher the probability of an outcome, the higher the cost of a share of that outcome. 
 
-To understand this, first let's look at how you place your predictions. You place YES and NO predictions on the prediction market of the post. Post's prediction market is simply a binary event market, where a YES prediction means users & group's governing body will like the post and a NO prediction means otherwise.
+In COCO's curation mechanism, the "event" is a decision by a governing body to accept or reject a post from their group's feed - but if predictions work as intended then the event doesn't actually need to occur. In other words, if all goes well predictions behave like votes, with users incentivized to vote in the best interest of the group. Only if the outcome is challenged repeatedly does the governing body step in to declare an outcome. These challenge and resolution mechanisms act as safeguards against people making dishonest predictions, whether to cheat the system or just to troll. 
 
-One fascinating feature of prediction markets is that prices for placing YES & NO predictions are accurate estimations of probability of YES & NO outcomes. And this is where post prediction markets become helpful in curation of the feed.
-
-Price of predicting YES or NO provides probability by which users & governing body will like the post. Thus, a group's curated feed simply contains a list of posts with high YES probability.
+For more on how predictions work, including pricing and probability, see [Groups, Predictions and Curation](https://coco-docs.vercel.app/more-about-coco/groups-predictions-curation).
