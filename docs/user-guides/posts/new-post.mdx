@@ -13,19 +13,19 @@ To post, click `New Post` on the left side panel of home page.
 	caption={`Click on "New Post"`}
 />
 
-Select group to post to, enter Creation Amount, upload post image and hit `Post`. <br/>
-
-Since every post also has an on-chain prediction market, confirm the transaction
-to create one for your new post. Once transaction is processed your post has been created successfully.
+Select the group you want to post to and enter your Creation Value. <br/>
 
 :::info
 
-`Creation Amount` is the amount you are willing to pay for posting in the group. <br/>
-1/2 of the amount is used for funding the prediction market of your post, so that
-others willing to place their predictions on your post have sufficient incentive to do so. <br/>
-Second half 1/2 is used for placing your YES predicition on the your new post.
+`Creation Value` is the amount you are willing to pay to post to the group. If the prediction outcome ends up being YES, you'll get the Creation Value back and potentially more; but you could also lose it if the outcome is NO. So the Creation Value should reflect your confidence that the post belongs in the group's feed - but it shouldn't be more than you're wiling to lose if you're wrong! <br/>
+
+While the post is in the prediction period, YES or NO predictions are represented as *shares* which users can buy or sell. Your Creation Value is the total value of shares that will be available for your post. You are purchasing half that value in YES shares, and the other half becomes available for other users to buy or sell. 
 
 :::
+
+Now upload the image you want to share, and hit `Post`. 
+
+Predictions for each post are hosted on chain while the prediction period is live, so you'll need to submit a transaction to initiate the prediction period for your new post. Once the transaction is processed, your post will show up on the group feed where other users can see and make predictions on it.
 
 <Image
 	src={
