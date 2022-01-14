@@ -1,53 +1,47 @@
 ---
-title: Place Predictions
+title: Make Predictions
 ---
 
 import { Image } from "./../../common.js";
 
-Select the post to place your predicton. The `Live` text on post's top right indicates
-that the post is in `Trading period` and accepts predictions.
+Making predictions is how you participate in curating what shows up in the feeds you care about. 
+
+If you see `Live` on the top right corner of a post, the prediction period is open for that post and you can help decide whether or not it should stay in the feed.
 
 <Image
 	src={
 		require("./../../../static/img/user-guides/post-live-text.jpg").default
 	}
-	caption={`"Live" green text indicates post is in Trading Period. So, place your predictions.`}
+	caption={`"Live" indicates post is in the Prediction Period. So, make your predictions.`}
 />
 
-After selecting post, use the dashboard on right side of the page to place predicitions.
+After selecting a post, use the dashboard on the right side of the page to make your prediction.
 
-Since we want to place a prediction, select BUY, among BUY or SELL option, on the dashboard.
-To place YES prediction, buy YES outcome shares. To place NO prediction,
-buy NO outcome share.
+To make a prediction, select `BUY` on the dashboard. 
 
-Enter WETH amount for which you want to buy either YES or NO outcome shares, select
-slippage, check Estimated shares bought, Avg. Price, Max. profit, and then hit `BUY`.
-Confirm the transaction & wait for it to process. Once processed, you have successfully
-placed your prediction.
+The current price per YES or NO share reflects the probability of each outcome, based on YES and NO shares bought so far. **More probable outcome = higher share price.**
+
+Enter the WETH amount you want to spend on either YES or NO outcome shares and set your slippage, then check your estimated shares bought, average price, maximum winnings and new YES/NO% to make sure you're getting the result you intended. 
 
 :::info
-`Your choice`: Your selected predicition outconme. <br/>
-`Estimated shares bought`: Total shares you are buying with WETH amount. <br/>
+`Slippage`: The price of shares is approximate, and can change during (or even because of!) your purchase. This is called slippage and it's usually minimal - but you can decide how much of a variance you're willing to put up with. <br/>
+`Your choice`: The outcome you're predicting. <br/>
+`Estimated shares bought`: Number of shares you will receive based on the WETH amount you've entered. <br/>
 `Avg. price per share`: Price per outcome share in WETH. <br/>
-`Max. potential profit`: Max. profit you can make, if your prediction is correct. <br/>
+`Max. potential winnings`: Maximum WETH you could win, if your prediction is correct <!-- add: "based on the number of shares bought so far"?<br/>
+`New YES% Probability`/ `New NO % Probability`: Shows how the shares you're buying will impact the outcome probability.<br/> 
 :::
 
-:::caution
-
-`Slippage` is required to prevent your order from executing at a unfavourable price
-caused by other orders. We recommend that you set your slippage at value >= 0.5%.
-
-:::
+Hit `Buy` and confirm the transaction in MetaMask. Once it's confirmed, you've made your prediction and done your part to keep your group's feed excellent and spam-free!
 
 <Image
 	src={
 		require("./../../../static/img/user-guides/post-buy-yes-tx.jpg").default
 	}
-	caption={`After providing values, click "Buy" and approve transaction to place your bet.`}
+	caption={`After providing values, click "Buy" and approve transaction to make your prediction.`}
 />
 
-You should see your recently bought shares next to `You own` under the outcome
-of which shares you bought.
+You should see your recently bought shares next to `You own` under the outcome you bought shares for.
 
 <Image
 	src={
@@ -57,8 +51,13 @@ of which shares you bought.
 	caption={`Value next to "You own" represent shares you own of the outcome.`}
 />
 
-If you don't see your shares, then wait for few seconds and reload page until it appears.
+If your transaction shows as confirmed on Etherscan and you don't see your shares, you might need to reload the page.
+
+:::caution
+Remember that as long as the prediction period remains open, other users can continue to make predictions of their own which could change the outcome. Keep an eye on posts where you've made predictions, and be ready to [challenge](challenges) if you think the outcome isn't correct.
+:::
+
 
 :::info
-To redeem your wins check [`Redeem Wins`](redeem) section
+To learn how to redeem your winnings once the outcome is declared, head to the [`Redeem Winnings`](redeem) section!
 :::
