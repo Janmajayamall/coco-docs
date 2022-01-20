@@ -4,26 +4,51 @@ title: Challenge Outcomes
 
 import { Image } from "./../../common.js";
 
-When a post's prediction period ends, whichever outcome (YES or NO) has the highest probability % will be set as the *temporary outcome*. During the challenge period, you can stake WETH to challenge the temporary outcome in favour of the outcome that you think is right. Your challenge will automatically change the temporary outcome - but another user can challenge again and change the outcome back. To prevent an infinite challenge loop, the group's governing body sets a limit on the number of times an outcome can be challenged before they step in to review the post and decide the outcome.
+When a post's prediction period ends, whichever outcome (YES or NO)
+has the highest probability % will be set as the _temporary outcome_.
+During the challenge period, you can stake WETH to challenge the
+temporary outcome in favour of the outcome that you think is right.
+Your challenge will automatically change the temporary outcome -
+but another user can challenge again and change the outcome back.
+To prevent an infinite challenge loop, the group's governing body
+sets a limit on the number of times an outcome can be challenged
+before they step in to review the post and decide the outcome.
 
 <!-- add: what you get if you win the challenge -->
 
-Click [here](more-about-coco/post-lifecycle.mdx#challenge-period) to learn more about what happens during the challenge period.
+Click [here](more-about-coco/post-lifecycle.mdx#challenge-period)
+to learn more about what happens during the challenge period.
 
-<!-- add: what you get if you win the challenge -->
+:::info
+Once the challenge period ends and final outcome is set, you get
+back the amount you staked in favour of the final outcome.
 
-A post that's in the challenge period will say `Challenge` in red at the top right corner.
+If you were last to stake in favour of the final outcome,
+you also _win_ the entire amount staked by others on the
+losing outcome.
+:::
 
-To challenge a post, click on the post and look for the `Challenge Outcome` dashboard to the right of the page.
+A post that's in the challenge period will say `Challenge`
+in red at the top right corner.
+
+To challenge a post, click on the post and look for the
+`Challenge Outcome` dashboard to the right of the page.
 
 :::info
 
-`Temporary outcome`: Current temporary outcome, which will be declared as the final outcome if it isn't challenged. <br/>
-`Time remaining`: <!-- i would suggest this wording instead of what's currently in the dashboard --> How much time is left in the challenge period, after which the temporary outcome will become final. <br/> 
-`Challenges left`: Number of challenges left before the post is sent to the governing body for resolution. <br/>
-`Min. amount to challenge`: Minimum amount to you need to stake in order to challenge the temporary outcome. <br/>
-`Outcome favored`: Outcome that you think is correct - this will be set as the new temporary outcome once you submit your challenge.
+`Temporary outcome`: Current temporary outcome, which will be
+declared as the final outcome if it isn't challenged. <br/>
+`Time remaining`: How much time is left in the challenge period,
+after which the temporary outcome will become final. <br/>
+`Challenges left`: Number of challenges left before the post
+is sent to the governing body for resolution. <br/>
+`Min. amount to challenge`: Minimum amount to you need to stake
+in order to challenge the temporary outcome. <br/>
+`Outcome favored`: Outcome that you think is correct - this
+will be set as the new temporary outcome once you submit your challenge.
+
 <!-- would it make sense to have "maximum winnings" here too...? -->
+
 :::
 
 Check the values under `Challenge outcome` heading, enter challenge amount, and hit
@@ -39,5 +64,6 @@ you have successfully challenged the temporary outcome.
 />
 
 :::info
-To learn how to redeem your winnings once the outcome is declared, head to the [`Redeem Winnings`](redeem) section!
+To learn how to redeem your winnings once the outcome is
+declared, head to the [`Redeem Winnings`](redeem) section!
 :::

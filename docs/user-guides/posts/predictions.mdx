@@ -4,9 +4,12 @@ title: Make Predictions
 
 import { Image } from "./../../common.js";
 
-Making predictions is how you participate in curating what shows up in the feeds you care about. 
+Making predictions is how you participate in curating what shows
+up in the feeds you care about.
 
-If you see `Live` on the top right corner of a post, the prediction period is open for that post and you can help decide whether or not it should stay in the feed.
+If you see `Live` on the top right corner of a post, the prediction
+period is open for that post and you can help decide whether or not it
+should stay in the feed.
 
 <Image
 	src={
@@ -15,24 +18,36 @@ If you see `Live` on the top right corner of a post, the prediction period is op
 	caption={`"Live" indicates post is in the Prediction Period. So, make your predictions.`}
 />
 
-After selecting a post, use the dashboard on the right side of the page to make your prediction.
+After selecting a post, use the dashboard on the right side of the page
+to make your prediction.
 
-To make a prediction, select `BUY` on the dashboard. 
+To make a prediction, select `BUY` on the dashboard.
 
-The current price per YES or NO share reflects the probability of each outcome, based on YES and NO shares bought so far. **More probable outcome = higher share price.**
+The current price per YES or NO share reflects the probability of each
+outcome, based on YES and NO shares bought so far. **More probable
+outcome = higher share price.**
 
-Enter the WETH amount you want to spend on either YES or NO outcome shares and set your slippage, then check your estimated shares bought, average price, maximum winnings and new YES/NO% to make sure you're getting the result you intended. 
+Enter the WETH amount you want to spend on either YES or NO outcome shares
+and set your slippage, then check your estimated shares bought, average
+price, maximum winnings and new YES/NO% to make sure you're getting the result you intended.
 
 :::info
-`Slippage`: The price of shares is approximate, and can change during (or even because of!) your purchase. This is called slippage and it's usually minimal - but you can decide how much of a variance you're willing to put up with. <br/>
+`Slippage`: The price of shares is approximate, and can change right before (due to
+other orders in queue) your order is executed. To prevent your order executing at
+unexpected price, you define slippage. It's usually minimal - but it helps you
+decide how much of a variance you're willing to put up with. <br/>
 `Your choice`: The outcome you're predicting. <br/>
-`Estimated shares bought`: Number of shares you will receive based on the WETH amount you've entered. <br/>
+`Estimated shares bought`: Number of shares you will receive based on the WETH
+amount you've entered. <br/>
 `Avg. price per share`: Price per outcome share in WETH. <br/>
-`Max. potential winnings`: Maximum WETH you could win, if your prediction is correct <!-- add: "based on the number of shares bought so far"?<br/>
-`New YES% Probability`/ `New NO % Probability`: Shows how the shares you're buying will impact the outcome probability.<br/> 
+`Max. potential winnings`: Maximum WETH you could win, if your prediction is
+correct
+`New YES% Probability`/ `New NO % Probability`: Shows how the shares you're buying
+will impact the outcome probability.<br/>
 :::
 
-Hit `Buy` and confirm the transaction in MetaMask. Once it's confirmed, you've made your prediction and done your part to keep your group's feed excellent and spam-free!
+Hit `Buy` and confirm the transaction in MetaMask. Once it's confirmed, you've made your
+prediction and done your part to keep your group's feed excellent and spam-free!
 
 <Image
 	src={
@@ -41,7 +56,8 @@ Hit `Buy` and confirm the transaction in MetaMask. Once it's confirmed, you've m
 	caption={`After providing values, click "Buy" and approve transaction to make your prediction.`}
 />
 
-You should see your recently bought shares next to `You own` under the outcome you bought shares for.
+You should see your recently bought shares next to `You own` under the outcome
+you bought shares for.
 
 <Image
 	src={
@@ -51,13 +67,17 @@ You should see your recently bought shares next to `You own` under the outcome y
 	caption={`Value next to "You own" represent shares you own of the outcome.`}
 />
 
-If your transaction shows as confirmed on Etherscan and you don't see your shares, you might need to reload the page.
+If your transaction shows as confirmed on MetaMask and you don't see your shares,
+you might need to reload the page.
 
 :::caution
-Remember that as long as the prediction period remains open, other users can continue to make predictions of their own which could change the outcome. Keep an eye on posts where you've made predictions, and be ready to [challenge](challenges) if you think the outcome isn't correct.
+Remember that as long as the prediction period remains open, other users can
+continue to make predictions of their own which could change the outcome.
+Keep an eye on posts where you've made predictions, and be ready to
+[challenge](challenges) if you think the outcome isn't correct.
 :::
 
-
 :::info
-To learn how to redeem your winnings once the outcome is declared, head to the [`Redeem Winnings`](redeem) section!
+To learn how to redeem your winnings once the outcome is declared, head
+to the [`Redeem Winnings`](redeem) section!
 :::
