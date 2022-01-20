@@ -3,55 +3,30 @@ title: Redeem Wins
 ---
 
 import { Image } from "./../../common.js";
+ 
+After a final outcome is decided, users who made predictions or challenges in favor of the correct outcome can redeem the WETH they put in plus any extra they've won. 
 
-Post's prediction market ends after final outcome is declared and you can redeem your wins.
-This is also indicated by `Ended` text on top right corner.
+<!-- add image of a post with the with "Final" tag -->
 
-:::info
+Once a final outcome has been declared, you'll see `Final` in green at the top right corner of the post.
 
-`Final outcome` is either set by group's governing body if max. no. of challenges are reached
-or as temporary outcome if it wasn't challenged.
+Select a post to redeem. On the right side of the page, under `Final outcome`, you'll find a summary of your participation and winnings. 
 
-:::
-
-Select the post from which you want to redeem your wins. One the right side of the page,
-under `Final outcome` you will find summary of your predictions, your wins from predictions,
-your challenges, wins from challanges, and total amount that you get back.
-Hit `Claim` & confirm transaction to claim your wins.
 
 :::info
 
-`Your trade winnings`: Equal to units of final outcome shares that you own. <br/>
-`In favour of YES`: Amount you staked to challenge in favour of YES outcome. <br/>
-`In favour of NO`: Amount you staked to challenge in favour of NO outcome. <br/>
-`Challenge winnings`: Reward you receive if you were last to stake on the right
-outcome. Reward is equal to total amount staked on the losing outcome. <br/>
-`You receive from Challenge`: Amount staked for the right outcome + Challenge winnings. <br/>
-`You get back in total`: Your trade winnings + You receive from Challenge
+`Your outcome shares`: WETH value of outcome shares that you own. <br/>
+`In favour of YES`: Amount you staked to challenge in favour of a YES outcome. <br/>
+`In favour of NO`: Amount you staked to challenge in favour of a NO outcome. <br/>
+`Challenge winnings`: Your reward if you were last to challenge in favour of the correct outcome, equal to the total staked on the losing outcome minus the resolution fee if applicable. <br/>
+`Total from Challenge`: Amount staked for the right outcome + Challenge winnings. <br/> <!-- suggest changing this wording in the app -->
+<!-- add `Resolution Fee`: Fee taken by the governing body if they were required to declare an outcome. -->
+`You get back in total`: Your outcome shares + Total from Challenge
 
 :::
 
-:::info
 
-If `Final outcome` is declared by the group group's governing body, amount equal to
-group's fee will be deducted from `Challenge winnings`.
-
-:::
-
-<Image
-	src={
-		require("./../../../static/img/user-guides/post-redeem-win-tx.jpg")
-			.default
-	}
-	caption={`Click on "Claim" to claim your entire winnings.`}
-/>
-
-:::note
-
-It's possible that the `Claim` button is disabled because you haven't given app's
-router contract approval to spend your outcome shares on your behalf.
-
-To give approval click on `Giver Approval` & confirm transaction.
+If this is your first time redeeming from this group, you'll need to give the contract permission to transfer your shares. Click `Give Approval` and confirm the transaction in MetaMask. You'll only need to do this once per group.
 
 <Image
 	src={
@@ -61,6 +36,18 @@ To give approval click on `Giver Approval` & confirm transaction.
 	caption={`Give approval.`}
 />
 
-Note that this is only needed once per group.
+Hit `Redeem` and confirm the transaction in MetaMask to claim your WETH! 
+<!-- suggest changing "claim" to "redeem" in the app - it would be consistent with the docs and i think it sounds better -->
+
+
+<Image
+	src={
+		require("./../../../static/img/user-guides/post-redeem-win-tx.jpg")
+			.default
+	}
+	caption={`Click on "Redeem" to claim your entire winnings.`}
+/>
+
+
 
 :::
