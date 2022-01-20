@@ -18,7 +18,6 @@ module.exports = {
 						"user-guides/posts/new-post",
 						"user-guides/posts/predictions",
 						"user-guides/posts/challenges",
-						"user-guides/posts/resolution",
 						"user-guides/posts/redeem",
 					],
 				},
