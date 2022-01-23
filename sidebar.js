@@ -29,7 +29,7 @@ module.exports = {
 			items: [
 				"more-about-coco/post-lifecycle",
 				"more-about-coco/groups-predictions-curation",
-				"more-about-coco/group-governing-body",
+				"more-about-coco/group-moderators",
 			],
 		},
 	],
