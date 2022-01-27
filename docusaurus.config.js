@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "COCO",
+	title: "Coco",
 	tagline: "",
 	url: "https://your-docusaurus-test-site.com",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/Coco-initial.svg",
-	organizationName: "COCO", // Usually your GitHub org/user name.
-	projectName: "COCO", // Usually your repo name.
+	organizationName: "janmajayamall", // Usually your GitHub org/user name.
+	projectName: "Coco", // Usually your repo name.
 
 	presets: [
 		[
@@ -38,9 +38,9 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "COCO",
+				title: "Coco",
 				logo: {
-					alt: "COCO",
+					alt: "Coco",
 					src: "img/Coco-initial.svg",
 				},
 				items: [

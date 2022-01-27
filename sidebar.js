@@ -25,7 +25,7 @@ module.exports = {
 		},
 		{
 			type: "category",
-			label: "More about COCO",
+			label: "More about Coco",
 			items: [
 				"more-about-coco/post-lifecycle",
 				"more-about-coco/groups-predictions-curation",
